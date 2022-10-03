@@ -1,13 +1,13 @@
 # -------------------------------------------------------------------------
-# AUTHOR: your name
-# FILENAME: title of the source file
-# SPECIFICATION: description of the program
-# FOR: CS 4210- Assignment #2
-# TIME SPENT: how long it took you to complete the assignment
+# AUTHOR: Aditya Dhar
+# FILENAME: knn.py
+# SPECIFICATION: Uses knn algorithm to make predictions
+# FOR: CS 4200- Assignment #2
+# TIME SPENT: 45 minutes
 # -----------------------------------------------------------*/
 
-# IMPORTANT NOTE: DO NOT USE ANY ADVANCED PYTHON LIBRARY TO COMPLETE THIS CODE SUCH AS numpy OR pandas. You have to work here only with standard
-# dictionaries, lists, and arrays
+# IMPORTANT NOTE: DO NOT USE ANY ADVANCED PYTHON LIBRARY TO COMPLETE THIS CODE SUCH AS numpy OR pandas. You have to
+# work here only with standard dictionaries, lists, and arrays
 
 # importing some Python libraries
 from sklearn.neighbors import KNeighborsClassifier
@@ -25,8 +25,8 @@ with open('binary_points.csv', 'r') as csvfile:
 # loop your data to allow each instance to be your test set
 accuracy = 0
 for i, instance in enumerate(db):
-    # add the training features to the 2D array X and remove the instance that will be used for testing in this iteration.
-    # For instance, X = [[1, 3], [2, 1,], ...]]. Convert values to float to avoid warning messages
+    # add the training features to the 2D array X and remove the instance that will be used for testing in this
+    # iteration. For instance, X = [[1, 3], [2, 1,], ...]]. Convert values to float to avoid warning messages
 
     # transform the original training classes to numbers and add them to the vector Y. Do not forget to remove the
     # instance that will be used for testing in this iteration. For instance, Y = [1, 2, ,...]. Convert values to
